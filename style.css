@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f172a;
+    color: #f1f5f9;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.header {
+    width: 100%;
+    min-height: calc(100px + 15vw);
+    background-image: url("./img/bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.usericon {
+    position: absolute;
+    top: 105px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.usericon img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.18);
+}
+
+.usericon span {
+    position: absolute;
+    background: #2afa6a;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    bottom: 3px;
+    right: 11px;
+    border: 2px solid #fff;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    align-items: center;
+}
+
+.profile p {
+    color: #818181;
+}
+
+.followers {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    gap: 100px;
+    font-size: 20px;
+    align-items: center;
+}
+
+.followers__title {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: 14.4px;
+    align-items: center;
+    color: #818181;
+}
+
+.line {
+    width: 350px;
+    /* You can keep it fixed or use percentage like 80% */
+    margin: 20px auto;
+}
+
+.about {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.socialmedia i:hover{
+   cursor: pointer;
+}
+.socialmedia a{
+    text-decoration: none;
+    color: white;
+}
+.menu {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: #94a3b8;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #818181;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.menu-item {
+    color: #818181;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.menu-item.active {
+    color: white;
+    text-decoration: underline;
+}
+
+.folbtn button {
+    background: #0091ff;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.folbtn {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.folbtn button:hover {
+    opacity: 0.8;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: 20px;
+    gap: 20px;
+    justify-content: center;
+    height: auto;
+}
+
+.project__images img {
+    flex-basis: 10%;
+    width: 200px;
+}
+
+.project__images p {
+    text-align: center;
+}
+
+.project__images img:hover {
+    border: solid 2px red;
+}
+
+.lines {
+    display: none;
+}
+
+.line {
+    display: block;
+}
+
+.aboutme__image {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.aboutme__image img {
+    width: 300px;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+
+.aboutme__content {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.aboutme__content a {
+    color: white;
+}
+
+@media (min-width: 868px) {
+    .lines {
+        display: block;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .usericon {
+        position: absolute;
+        top: 247px;
+        left: 17%;
+        transform: translatex(-50%);
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+        align-items: center;
+        margin-left: -900px;
+        margin-top: 80px;
+    }
+
+    .followers {
+        display: flex;
+        margin-top: 40px;
+        justify-content: center;
+        gap: 100px;
+        font-size: 20px;
+        margin-left: -900px;
+        align-items: center;
+    }
+
+    .followers__title {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        font-size: 14.4px;
+        align-items: center;
+        color: #818181;
+        margin-left: -900px;
+    }
+
+    .lines {
+        width: 350px;
+        margin-left: 70px;
+    }
+
+    .about {
+        margin-top: 20px;
+        text-align: center;
+        padding: 20px;
+        margin-left: 30px;
+        width: 350px;
+    }
+
+    .socialmedia {
+        display: flex;
+        justify-content: start;
+        gap: 30px;
+        margin-top: 10px;
+        margin-left: 150px;
+    }
+
+    .menu {
+        margin-top: -450px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+        margin-left: 150px;
+    }
+
+    .menu p:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        color: white;
+    }
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        margin-top: 20px;
+        gap: 10px;
+        justify-content: center;
+        margin-left: 350px;
+    }
+
+    .project__images img {
+        width: 242px;
+        flex-basis: 25%;
+    }
+
+    .folbtn button {
+        background: #fff;
+        color: #0091ff;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 20px;
+        left: 1200px;
+        top: -75px;
+        position: absolute;
+
+    }
+
+    .folbtn {
+        text-align: center;
+        margin-top: 25px;
+        position: relative;
+    }
+
+    .folbtn button:hover {
+        opacity: 0.8;
+    }
+    .aboutme__image img{
+        width: 250px;
+        margin-left: 450px;
+        border-radius: 20px;
+    
+    }
+    .aboutme__image{
+        display: flex;
+        gap: 5px;
+    }
+    .aboutme__content{
+        padding: 10px;
+    }
+    
+    .aboutme__content a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .line {
+        width: 350px;
+        margin-top: 20px auto;
+    }
+
+    .projects {
+        display: flex;
+        padding: 20px;
+        margin-top: 20px;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .project__images img {
+        flex-basis: 10%;
+        width: 180px;
+    }
+
+    .aboutme__image {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .aboutme__image img {
+        width: 80%;
+        margin-left: 0;
+        border-radius: 15px;
+    }
+
+    .aboutme__content {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .aboutme__content a{
+        text-decoration: none;
+        color: white;
+    }
+}
