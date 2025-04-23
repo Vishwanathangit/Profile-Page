@@ -84,7 +84,6 @@ body::-webkit-scrollbar {
 
 .line {
     width: 350px;
-    /* You can keep it fixed or use percentage like 80% */
     margin: 20px auto;
 }
 
@@ -101,13 +100,15 @@ body::-webkit-scrollbar {
     margin-top: 10px;
 }
 
-.socialmedia i:hover{
-   cursor: pointer;
+.socialmedia i:hover {
+    cursor: pointer;
 }
-.socialmedia a{
+
+.socialmedia a {
     text-decoration: none;
     color: white;
 }
+
 .menu {
     margin-top: 40px;
     display: flex;
@@ -336,21 +337,24 @@ body::-webkit-scrollbar {
     .folbtn button:hover {
         opacity: 0.8;
     }
-    .aboutme__image img{
+
+    .aboutme__image img {
         width: 250px;
         margin-left: 450px;
         border-radius: 20px;
-    
+
     }
-    .aboutme__image{
+
+    .aboutme__image {
         display: flex;
         gap: 5px;
     }
-    .aboutme__content{
+
+    .aboutme__content {
         padding: 10px;
     }
-    
-    .aboutme__content a{
+
+    .aboutme__content a {
         text-decoration: none;
         color: white;
     }
@@ -393,7 +397,7 @@ body::-webkit-scrollbar {
         padding: 10px;
     }
 
-    .aboutme__content a{
+    .aboutme__content a {
         text-decoration: none;
         color: white;
     }
